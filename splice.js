@@ -1,16 +1,45 @@
-// let arr = [1,2,34]
+//splice() Mutating Method
+//he splice() method in JavaScript is used to add, remove, or replace elements in an array. 
+//It modifies the original array and returns an array of the removed elements (if any).
 
-// console.log(arr.unshift('ab'))
-
-// console.log(arr);
+//Syntax
+//array.splice(start, deleteCount, item1, item2, ...);
+//start: The index at which to start changing the array. If negative, it counts from the end of the array.
+//deleteCount: The number of elements to remove starting from the start index. If 0, no elements are removed.
+//item1, item2, ...: (Optional) The elements to add at the start position.
 
 const hobArr = ['reading','writing','singing','cooking','swimming']
 
-console.log(hobArr.splice(10,0,'ff'));
+//console.log(hobArr.splice(10,0,'ff'));
 
-console.log(hobArr);
+//console.log(hobArr);
 
-console.log(hobArr.at(6));
+//console.log(hobArr.at(6));
+
+
+// In this above code i added 'ff' on index 10th but index 10th doesnot exist in the above array,in this case new elemnet
+//'ff' will be add at the end of the array at 6th index
+
+//Examples
+
+//1. Removing Elements
+const fruits = ['apple', 'banana', 'cherry', 'date'];
+fruits.splice(1, 2);  // Start at index 1, remove 2 elements
+
+//console.log(fruits);  // Output: ['apple', 'date']
+
+//2. Adding Elements
+const fruitss = ['apple', 'date'];
+fruits.splice(1, 0, 'banana', 'cherry');  // Start at index 1, remove 0 elements, add 'banana' and 'cherry'
+
+//console.log(fruits);  // Output: ['apple', 'banana', 'cherry', 'date']
+
+//3. Replacing Elements
+const fruitsss = ['apple', 'banana', 'cherry', 'date'];
+fruits.splice(1, 2, 'blueberry', 'kiwi');  // Start at index 1, remove 2 elements, add 'blueberry' and 'kiwi'
+
+console.log(fruits);        // Output: ['apple', 'blueberry', 'kiwi', 'date']
+
 
 
 
