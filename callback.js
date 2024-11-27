@@ -11,3 +11,7 @@ function greet(name, callback) {
 
   //In this example, sayGoodbye is a callback function passed to greet. 
   //After greet logs the greeting, it calls callback(), which then logs "Goodbye!".
+
+  
+
+  

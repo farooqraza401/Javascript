@@ -40,6 +40,16 @@ fruits.splice(1, 2, 'blueberry', 'kiwi');  // Start at index 1, remove 2 element
 
 console.log(fruits);        // Output: ['apple', 'blueberry', 'kiwi', 'date']
 
+//-------------------------------------
+
+const arr = [1,2,3,4,5]
+
+console.log(arr.splice(2,1,10));
+
+console.log(arr); // [1,2,10,4,5]
+
+
+
 
 
 

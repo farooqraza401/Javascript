@@ -26,19 +26,19 @@ const colors = ['red', 'blue', 'green', 'blue'];
 
 //2. Using fromIndex Parameter
 const colorss = ['red', 'blue', 'green', 'blue'];
-console.log(colorss.indexOf('green', 3));    // Output: 3
+//console.log(colorss.indexOf('green',2));    // Output: 2
 
 
 
 let element = ['laptop','headset','mobile','router']
 
-//console.log(element.indexOf('mobile'));  // 2  ----> return -1 if the value is not found
+//console.log(element.indexOf('mobile',3));  // -1  ----> return -1 if the value is not found
 
 
 
 let arr = [1,2,3,4]
 
-//console.log(arr.indexOf(7));
+console.log(arr.indexOf(4,4)); // -1
 
 
 
