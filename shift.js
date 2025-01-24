@@ -1,4 +1,4 @@
-//shift()-Mutating 
+//shift() - Mutating 
 
 //shift() method is used to remove the first element from an array and return that element. 
 //It also modifies the original array by shifting the remaining elements to the left.

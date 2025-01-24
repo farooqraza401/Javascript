@@ -29,7 +29,7 @@ const slicedFruitss = fruits.slice(2);
 
 //3. Using Negative Indices
 const fruitsss = ['apple', 'banana', 'cherry', 'date'];
-const slicedFruitsss = fruits.slice(-3, -1);
+const slicedFruitsss = fruits.slice(-3, -1); // -1 excluded
 
 console.log(slicedFruitsss);    // Output: ['banana', 'cherry']
 

@@ -1,4 +1,4 @@
-// A for loop in JavaScript is used to repeat a block of code a specific number of times.
+// In JavaScript, A for loop is used to repeat a block of code a specific number of times.
 //It is one of the most common control structures in programming.
 
 //Syntax
@@ -27,3 +27,5 @@ for (let i = 0; i < fruits.length; i++) {
   // banana
   // cherry
 }
+
+
