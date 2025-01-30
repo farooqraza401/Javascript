@@ -8,7 +8,7 @@
 const fruits = ['apple', 'banana', 'cherry'];
 
 //const result = fruits.join()
-const result = fruits.join('-')
+const result = fruits.join() 
 console.log(result); // apple-banana-cherry
 console.log(fruits);
 

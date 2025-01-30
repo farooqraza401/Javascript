@@ -99,7 +99,7 @@ const person2 = {
 };
 
 const entries = Object.entries(person2);
-console.log(entries) //[ [ 'name', 'amber' ], [ 'age', 22 ], [ 'city', 'Budaun' ] ] 'Object.entries() method returns an array of an object's key-value pairs as nested arrays'
+//console.log(entries); //[ [ 'name', 'amber' ], [ 'age', 22 ], [ 'city', 'Budaun' ] ] 'Object.entries() method returns an array of an object's key-value pairs as nested arrays'
 for (let i = 0; i < entries.length; i++) {
   //console.log(`${entries[i][0]}:${entries[i][1]}`) // return both key and value
   //console.log(`${entries[i][1]}`) // return values only
@@ -109,7 +109,6 @@ for (let i = 0; i < entries.length; i++) {
 // Objects in JavaScript are not directly iterable.
 // To iterate over an object, you need to extract its keys, values, or entries into an iterable form
 // using methods like Object.keys(), Object.values(), or Object.entries().
-
 
 // Q.why Objects in JavaScript are not directly iterable.
 // Ans1
@@ -222,7 +221,7 @@ const numberOBJ = {
 // You can create an array using the array literal syntax or the Array constructor.
 
 // The array literal syntax uses square brackets to enclose a comma-separated list of values.
-// Example: 
+// Example:
 
 // What is the Array constructor?
 // The Array constructor creates an array by using the new Array() syntax.
@@ -234,7 +233,6 @@ const numberOBJ = {
 // Any element in the array can be accessed using the index number.
 let a = ["HTML", "CSS", "JS"];
 //console.log(a);
-
 
 // Accessing Array Elements
 //console.log(a[0]); // HTML
@@ -251,7 +249,7 @@ let a = ["HTML", "CSS", "JS"];
 //-----------------------------
 //4. Modifying the Array Elements
 //Elements in an array can be modified by assigning a new value to their corresponding index.
-a[1]= "Bootstrap";
+a[1] = "Bootstrap";
 //console.log(a); // [ 'HTML', 'Bootstrap', 'JS' ]
 //-----------------------------
 // 5. Adding Elements to the Array
@@ -297,25 +295,23 @@ let c = ["HTML", "CSS", "JS"];
 //console.log("After Removing 2 elements starting from index 1:" +c)
 
 // EX
-const fruits =['apple','mango','banana','guava'] // create an array by using the array literal
+const fruits = ["apple", "mango", "banana", "guava"]; // create an array by using the array literal
 
 //Accessing the First,second Element of an Array
-const fst = fruits[0]
-const scnd = fruits[1]
+const fst = fruits[0];
+const scnd = fruits[1];
 //console.log(fst,scnd)
 //Accessing the last Element of an Array
-const last  = fruits[fruits.length-1]
+const last = fruits[fruits.length - 1];
 //console.log(last)
 
 //Modifying the Array Elements
 //can be modified by assigning a new value to their corresponding index.
-fruits[3]='graps'
+fruits[3] = "graps";
 //console.log(fruits)
 
-
-
 // EX
-const alpha = new Array('abc','def','ghi','jkl','mno','pqr') //creates an array by using the new Array() or using the Array constructor.
+const alpha = new Array("abc", "def", "ghi", "jkl", "mno", "pqr"); //creates an array by using the new Array() or using the Array constructor.
 
 //Aaccess the first two elements of the alpha array
 // 1. Using Indexes:
@@ -325,7 +321,7 @@ const alpha = new Array('abc','def','ghi','jkl','mno','pqr') //creates an array 
 //console.log(alpha[1])
 
 // 2. Using slice():
-//The slice() method returns a shallow copy of a portion of the array. 
+//The slice() method returns a shallow copy of a portion of the array.
 // Use it to extract the first two elements:
 //const firstTwo = alpha.slice(0,2) //Excluding 2 and returns a shallow copy of a portion of the array
 //console.log(firstTwo)
@@ -337,7 +333,7 @@ const alpha = new Array('abc','def','ghi','jkl','mno','pqr') //creates an array 
 
 //4. Using for Loop:
 //Iterate over the array and stop after the first two elements:
-for(let i=0;i<2;i++){
+for (let i = 0; i < 2; i++) {
   //console.log(alpha[i])
 }
 
@@ -382,8 +378,6 @@ for(let i=0;i<2;i++){
 // 4
 // 5
 
-
-
 //console.log(alpha[0])
 //console.log(alpha[alpha.length-1])
 //console.log(alpha) // [ 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqr' ]
@@ -399,25 +393,296 @@ for(let i=0;i<2;i++){
 //const gg = alpha.push('bnmvc')
 //console.log(gg)  //It returns the new length of the array after the elements are added.
 //console.log(alpha) // [ 'abc', 'def', 'xxyyzz', 'jkl', 'mno','bnmvc']
+//----------------
+
+// while loop
+
+const empArr = ["siddiq", "chandar", "rehman", "amber", "arnav", "shubh"];
+//console.log('using while')
+let i = 0;
+while (i < empArr.length) {
+  //console.log(empArr[i])
+  i++;
+}
+
+//console.log('using do while')
+let j = 0;
+do {
+  //console.log(empArr[j])
+  j++;
+} while (j < empArr.length);
+
+//let i = 1;
+// while (i < 3) {
+//   console.log("Number:", i);
+//   i++;
+// }
+
+// while(i < 10){
+//   console.log('Number:', i)
+//   i++
+// }
+
+//-------
+// do-while loop
+
+//let j=0
+// do{
+//   console.log('Number:',j)
+//   j++
+// }while(j<5)
+
+//Q A function to iterate to an array using for ,while,do while,for of, for in loops
+
+const number = [30, 40, 50, 60, 70];
+
+function iterateArray(arr) {
+  //console.log("using for:");
+  for (let i = 0; i < arr.length; i++) {
+    //console.log(arr[i]);
+  }
+
+  //console.log("using while:");
+  let j = 0;
+  while (j < arr.length) {
+    //console.log(arr[j]);
+    j++;
+  }
+
+  //console.log("using while:");
+  let k = 0;
+  do {
+    //console.log(arr[k]);
+    k++;
+  } while (k < arr.length);
+
+  //console.log("using for in:");
+  for (let val in arr) {
+    //console.log(arr[val]);
+  }
+
+  //console.log("using for of");
+  for (let value of arr) {
+    //console.log(value);
+  }
+}
+
+//iterateArray(number);
+
+const memArr = [
+  "shamshad",
+  "asmat",
+  "khalida",
+  "shahida",
+  "fatema",
+  "farooq",
+  "siddiq",
+  "amber",
+];
+
+//onsole.log("memArr Length:", memArr.length);
+
+const iterateArray1 = (arrr) => {
+  //console.log("using for lp:");
+  for (let i = 0; i < arrr.length; i++) {
+    //console.log(arrr[i]);
+  }
+
+  //console.log("using while lp:");
+  let j = 0;
+  while (j < arrr.length) {
+    //console.log(arrr[j]);
+    j++;
+  }
+
+  //console.log("using do while lp:");
+  let k = 0;
+  do {
+    //console.log(arrr[k]);
+    k++;
+  } while (k < arrr.length);
+
+  //console.log("using for in lp:");
+  for (let item in arrr) {
+    //console.log(arrr[item]);
+  }
+
+  //console.log('using for of looopp:')
+  for (let item of arrr) {
+    //console.log(item)
+  }
+};
+
+//iterateArray1(memArr);
+
+//----------------------------------------
+
+// map() Non Mutating
+//The map() method in JavaScript is used to iterate over an array and transform its elements,
+//returning a new array of the same length.
+//It is commonly used when you want to apply a function to each element of an array.
+
+const array = ["Home", "About", "Contact Us"];
+const newArr = array.map((el) => el);
+// const newArr = array.map(function(el){
+//   return el
+// } )
+//console.log("newArr",newArr);
+
+const arrrrr = [1, 23, 4, , 5, 7, 8, 9, 3, 10, 2];
+
+const newArrrrr = arrrrr.map((num) => num);
+
+//console.log('newArrrrr',newArrrrr)
+
+//--------------------------------------------------
+
+let str = "i am Farooq";
+//print everey character of above sentence using for..in loop
+for (let s in str) {
+  //console.log(str[s])
+}
+
+//print everey character of above sentence using for..of loop
+for (let val of str) {
+  //console.log(val)
+}
+
+//print everey character of above sentence using for loop
+const newSentence = "Hello World!";
+
+for (let i = 0; i < newSentence.length; i++) {
+  //console.log(newSentence[i]);
+}
+
+//print everey character of above sentence using for loop with function
+const sentence = "i am person neither good nor bad";
+
+function prntsentence(ss) {
+  for (let i = 0; i < ss.length; i++) {
+    //console.log(ss[i]);
+  }
+}
+//prntsentence(sentence);
+
+//print everey character of above sentence while loop
+const newSentence1 = "Hello Worldbn!";
+
+let e = 0;
+while (e < newSentence1.length) {
+  //console.log(newSentence1[e]);
+  e++;
+}
+
+//print everey character of above sentence while loop with function
+const newSentence2 = "Hello Worldv!";
+
+function prtint(ele) {
+  let ee = 0;
+  while (ee < newSentence2.length) {
+    //console.log(ele[ee]);
+    ee++;
+  }
+}
+
+//prtint(newSentence2)
+
+//print everey character of above sentence do while loop
+const newSentence3 = "HELLO WORLDDDDD!";
+let rr = 0;
+do {
+  //console.log(newSentence3[rr]);
+  rr++;
+} while (rr < newSentence3.length);
+
+//print everey character of above sentence do while loop with function
+
+//print everey character of above sentence do while loop
+const newSentence4 = "HELLO WORLDDDDDfgbnm!";
+
+function ptAr(v) {
+  let rrr = 0;
+  do {
+    //console.log(v[rrr]);
+    rrr++;
+  } while (rrr < newSentence4.length);
+  //while (rrr < v.length); it is also working
+}
+
+//ptAr(newSentence4);
+//-------------------------------------------
+
+// JavaScript Object assign() Method
+
+// The Object.assign() method is used to copy the values and properties from one or more source objects
+// to a target object. It invokes getters and setters
+// since it uses both [[Get]] on the source and [[Set]] on the target.
+
+//Syntax:
+//Object.assign(target, ...sources);
+
+//Parameters:
+//target: It is the target object to which values and properties have to be copied.
+//sources: It is the source object from which values and properties have to be copied.
+//Return Value:
+//Object.assign() returns the target object.
+
+//Example 1: Merging Objects
+const obj1 = {
+  a: 1,
+  b:2 
+};
+
+const obj2 = {
+  c: 3,
+  d:4
+};
+
+const obj3 = {
+  e: 5,
+  f:6
+};
+
+const mergeObj = Object.assign({}, obj1,obj2,obj3)
+//console.log(mergeObj)
+
+//Example 2: Overwriting Properties
+const obj11 ={
+  name:'farooq',
+  age:27,
+  city:'budaun'
+}
+
+const obj12 ={
+  Emp:'farooq',
+  age:28,
+  email:'farooq123@gmail.com'
+}
+
+const result = Object.assign({},obj11,obj12)
+//console.log(result)
+
+//Example 3: Cloning an Object
+const orgObj ={
+  W:10,
+  x:20,
+  y:30,
+  z:40
+}
+
+const CloningObj = Object.assign({},orgObj)
+//console.log(CloningObj)
+
+//Example 4: Adding New Properties
+
+const personObj ={
+  name:'Arshi'
+}
+//console.log(personObj)
+
+const addproptoPersonObj = Object.assign(personObj,{age:'23',city:'budaun',address:'xyz'})
+
+//console.log(addproptoPersonObj)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    

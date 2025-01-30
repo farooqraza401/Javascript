@@ -27,7 +27,7 @@ let str3 = "World!";
 
 let result = str1.concat(str2, str3); // "Hello World!"
 console.log(result);
-//console.log(str1); // str1 remains "Hello"
+//console.log(str1); // str1 no modified 
 
 //Key Points
 //concat() does not modify the original array or string.

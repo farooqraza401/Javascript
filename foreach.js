@@ -4,12 +4,15 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach((num) => {
-  console.log(num);
-});
+// numbers.forEach((num) => {
+//   console.log(num);
+// });
 // Output:
 // 1
 // 2
 // 3
 // 4
 // 5
+numbers.forEach(function (a) {
+  console.log(a);
+});

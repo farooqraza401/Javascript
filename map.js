@@ -6,7 +6,7 @@
 
 
 const numbers = [1, 2, 3, 4, 5];
-const squared = numbers.map(num => num * num);
+const squared = numbers.map((num)=> num * num);
 
 console.log(squared); // Output: [1, 4, 9, 16, 25]
 
@@ -15,4 +15,4 @@ console.log(squared); // Output: [1, 4, 9, 16, 25]
 const numberss = [1, 2, 3, 4, 5];
 const squaredd = numberss.map(num => num + 1);
 
-console.log(squaredd); // Output: [ 2, 3, 4, 5, 6 ]
+//console.log(squaredd); // Output: [ 2, 3, 4, 5, 6 ]

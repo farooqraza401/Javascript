@@ -2,7 +2,7 @@
 
 // What is an object in JavaScript?
 
-// An object is a complex data structure that allows you to store collections of data.
+// An object is a complex data structure that allows we to store collections of data.
 // It is used to group related data and functionality together,
 // consisting of properties (key-value pairs) and methods (functions).
 
@@ -30,7 +30,6 @@
 // How do we delete properties from an object?
 
 // we can delete properties using the delete operator, which removes the property from the object.
-
 
 const obj1 = {
   username: "farooq",
@@ -97,10 +96,10 @@ let obj = {
   },
 };
 
-// console.log(obj.name)
-// console.log(obj.age)
-// console.log(obj.address)
-// obj.funcB()
+//  console.log(obj.name)
+//  console.log(obj.age)
+//  console.log(obj.address)
+//  obj.funcB()
 //--------------------------------------------
 
 // Define Function Explicitly.
@@ -147,8 +146,8 @@ let p = {
 //console.log(p[key]); //Bareilly, 'Note-Dynamic Access supported'
 //---------------------------------------------
 
-// Adding a property to an object in JavaScript is simple and can be done 
-// using either dot notation or bracket notation. 
+// Adding a property to an object in JavaScript is simple and can be done
+// using either dot notation or bracket notation.
 
 // 1.Using Dot Notation
 // Dot notation is the most common and straightforward way to add a property to an object.
@@ -157,18 +156,15 @@ let p = {
 // object.propertyName = value;
 
 // First create an empty object
-const objj ={
-
-}
+const objj = {};
 // Add properties using dot notation
-objj.name='Amber'
-objj.age=22
-objj.city='budaun'
+objj.name = "Amber";
+objj.age = 22;
+objj.city = "budaun";
 //console.log(objj) // { name: 'Amber', age: 22, city: 'budaun' }
 
-
 // 2. Using Bracket Notation
-// Bracket notation is used when the property name is dynamic (e.g., stored in a variable) or 
+// Bracket notation is used when the property name is dynamic (e.g., stored in a variable) or
 // contains special characters.
 
 // Syntax:
@@ -188,11 +184,11 @@ car["year of manufacture"] = 2021;
 
 // EX
 // Bracket notation allows we to use variables as property names.
-const key = 'color'
-const value='green'
+const key = "color";
+const value = "green";
 
-const apple ={} // create an empty obj
-apple['key']=value
+const apple = {}; // create an empty obj
+apple["key"] = value;
 
 //console.log(apple) // { key: 'green' }
 
@@ -212,10 +208,7 @@ console.log(objjj); // { for: 'loop' } 'just because of return "{ for: 'loop' }"
 //Use bracket notation for dynamic keys, special characters, or reserved words.
 //Properties added dynamically are enumerable and can be iterated over unless specifically set as non-enumerable.
 
-
-
 //---------------------------------------------
-
 
 // Create string primitive.
 let strPrimitive = "GeeksforGeeks";
@@ -242,12 +235,33 @@ let strObj = new String("Farooq");
 //console.log(Object.prototype.toString.call(strObject)) // [object String]
 //==========================================================================
 
-
-// In JavaScript, objects can be traversed using various loop structures. 
-// Objects do not have a numerical index like arrays, 
+// In JavaScript, objects can be traversed using various loop structures.
+// Objects do not have a numerical index like arrays,
 // so looping through them involves iterating over their keys or key-value pairs.
 
 // Key Behavior of Enumerable Properties
 // Default: Properties added directly to an object (using dot or bracket notation) are enumerable by default.
 // Non-enumerable properties: These are properties that do not appear in for...in loops or methods like Object.keys().
 
+//-----------------------------------------------------------------
+
+// A function return current date
+
+const getCurrentdate = function () {
+  return console.log(new Date());
+};
+
+//getCurrentdate(); // 2025-01-30T06:47:01.679Z
+
+// A function return current date only
+
+const onlyDate=()=>{
+  const date = new Date()
+  const year= date.getFullYear()
+  const month = String(date.getMonth()+1).padStart('2','0')
+  const day = date.getDate()
+
+  return console.log(`${day}-${month}-${year}`)
+}
+
+//onlyDate() // 30-01-2025
