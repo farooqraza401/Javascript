@@ -20,11 +20,12 @@
 //string.lastIndexOf(searchElement, fromIndex);
 
 const numbers = [1, 2, 3, 2, 4, 2, 5];
+
 let element = ['laptop','gg','ff','headset','mobile','ff','router','ff','headset','router','ff']
 
-console.log(element.lastIndexOf('router'));       // Output: 5 (last occurrence of 2)
-//console.log(numbers.lastIndexOf(2, 4));    // Output: 3 (searches up to index 4)
-//console.log(numbers.lastIndexOf(6));       // Output: -1 (6 is not found in the array)
+//console.log(element.lastIndexOf('router'));       // Output: 9 (last occurrence of 2)
+ console.log(numbers.lastIndexOf(2));           // Output: 3 (searches up to index 4)
+//console.log(numbers.lastIndexOf(6));             // Output: -1 (6 is not found in the array)
 
 
 

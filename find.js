@@ -19,12 +19,15 @@ const users = [
 
 const x = users.find(x => x.id === 3)
 //console.log(x); // { id: 3, name: 'Charlie' }
+const user = users.find(x => x.name === 'Charlie')
+c//onsole.log(user) // { id: 3, name: 'Charlie' }
+
 
 // EX - Finding a number in an array
 
 const numbers = [5, 12, 8, 130, 44];
 
 const y = numbers.find(y => y > 170)
-console.log(y); // 130
+// console.log(y); //undefined
 
 

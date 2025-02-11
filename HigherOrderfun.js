@@ -21,7 +21,7 @@ function sayGoodbye() {
 }
 
 // Passing 'sayGoodbye' function as an argument
-greet("Alice", sayGoodbye);
+// greet("Alice", sayGoodbye);
 
 //output
 //Hello, Alice
@@ -38,8 +38,8 @@ function multiplyBy(factor) {
 const double = multiplyBy(2);
 const triple = multiplyBy(3);
 
-console.log(double(5)); // Output: 10
-console.log(triple(5)); // Output: 15
+// console.log(double(5)); // Output: 10
+// console.log(triple(5)); // Output: 15
 
 //Example3: Built-in Higher-Order Functions in JavaScript
 //map():
@@ -52,21 +52,21 @@ console.log(triple(5)); // Output: 15
 //filter():
 //filter() – Select Elements Based on a Condition
 //const numbers = [1, 2, 3, 4, 5, 6];
-const evenNumbers = numbers.filter((num) => num % 2 === 0);
-console.log(evenNumbers); // Output: [2, 4, 6]
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+//console.log(evenNumbers); // Output: [2, 4, 6]
 // Note - filter() returns a new array with only elements that pass the test.
 
 //reduce():
 //reduce() – Accumulate Values into a Single Result
 const numbers = [1, 2, 3, 4, 5];
 const sum = numbers.reduce((acc, num) => acc + num, 0);
-console.log(sum); // Output: 15
+//console.log(sum); // Output: 15
 // Note - reduce() accumulates a value by applying the function to each element.
 
 //forEach():
 //forEach() – Perform an Action for Each Element
 const names = ["Alice", "Bob", "Charlie"];
-names.forEach((name) => console.log("Hello, " + name));
+// names.forEach((name) => console.log("Hello, " + name));
 
 //Output:
 //Hello, Alice
@@ -83,5 +83,10 @@ function square(num) {
   return num * num;
 }
 
-console.log(applyOperation([1, 2, 3], square)); // Output: [1, 4, 9]
+//console.log(applyOperation([1, 2, 3], square)); // Output: [1, 4, 9]
 // Here, applyOperation() accepts an array and a function to apply to each element.
+
+const headerArr = ["Home", "About Us", "Contact Us"];
+
+const header = headerArr.map((x) => x);
+console.log(header);

@@ -91,15 +91,17 @@ let obj = {
     console.log("Welcome Sonu !");
   },
   funcB: function () {
-    this.funcA();
+    
+    // this.funcA();
     console.log("Welcome Farhan!");
+    this.funcA();
   },
 };
 
-//  console.log(obj.name)
-//  console.log(obj.age)
-//  console.log(obj.address)
-//  obj.funcB()
+ console.log(obj.name)
+ console.log(obj.age)
+ console.log(obj.address)
+ obj.funcB()
 //--------------------------------------------
 
 // Define Function Explicitly.

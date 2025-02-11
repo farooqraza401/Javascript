@@ -36,7 +36,7 @@ let element = ['laptop','headset','mobile','router']
 
 
 
-let arr = [1,2,3,4]
+let arr = [1,2,3,4,3,4]
 
 console.log(arr.indexOf(4,4)); // -1
 

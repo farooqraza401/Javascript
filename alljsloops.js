@@ -21,7 +21,7 @@
 //const fruits1 = ["apple", "banana", "cherry"];
 //console.log(fruits1.length);
 
-// for (let i = 0; i < fruits.length; i++) {
+// for (let i = 0; i < fruits1.length; i++) {
 //   console.log(fruits1[i]);
 // }
 // // Output:
@@ -682,7 +682,17 @@ const personObj ={
 
 const addproptoPersonObj = Object.assign(personObj,{age:'23',city:'budaun',address:'xyz'})
 
-//console.log(addproptoPersonObj)
+//console.log(addproptoPersonObj)  
+
+const arrrrrrrr =[1,2,'a','b'] 
+
+//console.log(arrrrrrrr)       // [ 1, 2, 'a', 'b' ]
+
+for(i=0;i<arrrrrrrr.length;i++){
+  //console.log(arrrrrrrr[i])  // 1,2,a,b
+}
+
+
 
 
 

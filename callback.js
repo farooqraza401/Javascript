@@ -27,9 +27,9 @@ function sayGoodbye() {
 
 //-------------------------------------------------
 
-function goodMorning(name, f) {
+function goodMorning(name, func) {
   console.log(`Good mornning ${name}`);
-  return f();
+  func();
 }
 
 function verygoodMorning() {

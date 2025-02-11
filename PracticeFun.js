@@ -9,14 +9,16 @@ function sum(x, y) {
 const sm = (a, b) => {
   return a + b;
 };
-
 //console.log(sm(100, 200)); // 300
 
 let add = (a, b) => {
   console.log(a + b);
 };
-
 //add(3, 5);
+
+const Addition = (a, b) => a + b;
+//console.log(Addition(4,5)) // 9
+
 //------------------------
 
 function Division(a, b) {
@@ -32,19 +34,21 @@ let Divide = (j, k) => {
 
 //Divide(16, 8); // true
 
+const Division1 = (a, b) => a % b === 0;
+// console.log(Division1(2,4)) // false
+c//onsole.log(Division1(4, 2)); // true
+
 //--------------------------
 
 // multiply
 function product(a, b) {
   return console.log(a * b);
 }
-
 //product(3,9) //27
 
 const prodct = (a, b) => {
   return console.log(a * b);
 };
-
 //prodct(5, 8); //40
 
 // subtraction
@@ -121,16 +125,15 @@ const printEven = () => {
 
 //Using Exponentiation Operator **
 function squareRoot(num) {
-    return num ** 0.5; // Same as Math.sqrt(num)
+  return num ** 0.5; // Same as Math.sqrt(num)
 }
 
 function cubeRoot(num) {
-    return num ** (1 / 3); // Same as Math.cbrt(num)
+  return num ** (1 / 3); // Same as Math.cbrt(num)
 }
 
-//console.log("Square root of 2:", squareRoot(2)); 
-//console.log("Cube root of 2:", cubeRoot(2));     
-
+//console.log("Square root of 2:", squareRoot(2));
+//console.log("Cube root of 2:", cubeRoot(2));
 
 //----------------
 //Prime number
@@ -139,3 +142,24 @@ function cubeRoot(num) {
 
 //  A number n is prime if:
 //  n>1 and the only divisors of n are 1 and n.
+
+//--------------------
+
+// A function return current date
+const getCurrentdate = function () {
+  return console.log(new Date());
+};
+
+//getCurrentdate(); // 2025-01-30T06:47:01.679Z
+
+// A function return current date only
+const onlyDate=()=>{
+  const date = new Date()
+  const year= date.getFullYear()
+  const month = String(date.getMonth()+1).padStart('2','0')
+  const day = date.getDate()
+
+  return console.log(`${day}-${month}-${year}`)
+}
+
+//onlyDate() // 30-01-2025
